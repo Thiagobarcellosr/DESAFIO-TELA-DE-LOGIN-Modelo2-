@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="container_login">
+        <div id="tela_login">
+            <header>
+                <h2>Tela de Login</h2>
+                <h1>Login</h1>
+            </header>
+
+            <nav>
+                <form action="login" id="login_form">
+                    <label for="email" id="label_email">Email</label> 
+                    <input type="email" name="email" id="input_email" placeholder=" seunome@email.com"> 
+                    <label for="senha" id="label_senha">Senha</label> 
+                    <input type="password" name="senha" id="input_senha" placeholder=" Senha" minlength="7">
+                    <div id="box_checkbox">
+                        <input type="checkbox" name="checkbox" id="input_checkbox" onclick="mostrar_senha()">
+                        <label for="checkbox" id="label_checkbox">Mostar/ocultar Senha</label>
+                    </div>
+                    <a href="" id="esquecisenha"> Esqueceu sua senha? </a> <br>
+                    <input type="submit" value="Entre" id="button" >
+                </form>
+            </nav>
+
+            <footer>
+                <p id="p1">Ou continue com:</p> 
+                    <div id="redes_sociais">
+                        <a href="" > <img src="./assets/icons8-google.svg" alt="" id=logo></a>
+                        <a href="" > <img src="./assets/icons8-github.svg" alt="" id=logo></a>
+                        <a href="" > <img src="./assets/icons8-facebook.svg" alt="" id=logo></a>
+                    </div>
+                <a href="" id="inscrevasse"> <p>Não possui conta?</p> <p> Se increva de graça!</p></a>
+            </footer>
+    </div>
+    </section>
+
+    <section id="imagem">
+        <img src="./assets/imagem-principal.svg" alt="">
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
